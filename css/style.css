@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.cyan {
+    color: hsl(178, 100%, 50%);
+}
+
+.white {
+    color: #fff;
+}
+.whiteT {
+    color: rgba(255, 255, 255, 0.688);
+}
+.grey{
+    color: rgb(143, 143, 143);
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* background card  */
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* card */
+main .container {
+    max-width: 90%;
+    max-height: 80%;
+    background-color: hsl(216, 50%, 16%);
+    padding: 5% 5%;
+    border-radius: 20px;
+
+}
+
+/* img card  */
+main .container figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+main .container figure .nft {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+main .container figure .view{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.385);
+
+
+}
+
+/* hover iamge  */
+main .container figure .nft:hover{
+    opacity: 0.3;
+    background-color: hsl(178, 100%, 50%);
+
+}
+main .container figure .view:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* partis Texte sous l'image principale  */
+main .container .txt {
+    padding: 0.5rem;
+}
+
+main .container .txt h2 {
+    color: #fff;
+    padding: 1rem 0;
+
+}
+/* hover span  */
+main .container .txt h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+main .container .txt p {
+    font-style: 18px;
+    padding: 1rem 0;
+
+}
+
+/* partis prix */
+main .container .price {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* partis createur  */
+main .container .createur {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+main .container .createur img {
+    margin: 0.2rem;
+    margin-right: 1rem;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border: 1px solid #fff;
+    border-radius:20px ;
+}
+
+/* partis attribution  */
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 11px;
+    transform: translate(-50%,-50%);
+    color: #aaa;
+  }
+
+/* hover span  */
+main .container .createur p span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width:994px){
+    main .container{
+        width: 23rem;
+        padding: 1.5%;
+    }
+    
+    main .container figure{
+        height: 18rem;
+    }
+    main .container figure .nft{
+        width: 100%;
+        /* aspect-ratio: 1; */
+        /* margin-left:10% ; */
+    }
+    main .container figure .view{
+        width: 100%;
+        height: 100%;
+    }
+}
+
